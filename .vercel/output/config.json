@@ -1,0 +1,32 @@
+{
+	"version": 3,
+	"routes": [
+		{
+			"handle": "filesystem"
+		},
+		{
+			"src": "^/_astro/(.*)$",
+			"headers": {
+				"cache-control": "public, max-age=31536000, immutable"
+			},
+			"continue": true
+		}
+	],
+	"images": {
+		"sizes": [
+			640,
+			750,
+			828,
+			1080,
+			1200
+		],
+		"domains": [
+			"source.unsplash.com"
+		],
+		"formats": [
+			"image/webp",
+			"image/avif"
+		],
+		"remotePatterns": []
+	}
+}

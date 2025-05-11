@@ -1,0 +1,56 @@
+---
+// Sección Hero para la página web de nutricionista
+---
+
+<section id="inicio" class="relative min-h-screen flex items-center pt-24 pb-16 w-full">
+  <!-- Fondo con overlay gradiente -->
+  <div class="absolute inset-0 overflow-hidden">
+    <div class="absolute inset-0 bg-[url('/img/hero-bg.jpg')] bg-cover bg-center opacity-20"></div>
+    <div class="absolute inset-0 bg-gradient-to-r from-primary/30 to-tertiary/30"></div>
+  </div>
+  
+  <div class="container relative z-10 w-full px-4">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
+      <div class="text-center lg:text-left" data-aos="fade-right">
+        <span class="inline-block px-4 py-2 rounded-full bg-accent text-primary font-medium mb-6">Nutrición Personalizada</span>
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-dark mb-6 leading-tight">
+          <span class="block font-serif">Transforma tu</span>
+          <span class="text-primary font-serif">salud a través</span>
+          <span class="block font-serif">de la nutrición</span>
+        </h1>
+        <p class="text-lg md:text-xl text-gray-600 mb-8 max-w-lg mx-auto lg:mx-0">
+          Planes personalizados basados en evidencia científica para mejorar tu bienestar, energía y calidad de vida.
+        </p>
+        <div class="flex flex-wrap justify-center lg:justify-start gap-4">
+          <a href="#servicios" class="btn btn-primary">Ver Servicios</a>
+          <a href="#contacto" class="btn btn-outline">Contactar</a>
+        </div>
+      </div>
+      
+      <div class="relative" data-aos="fade-left" data-aos-delay="300">
+        <div class="relative h-[500px] rounded-xl overflow-hidden shadow-xl">
+          <img 
+            src="https://plus.unsplash.com/premium_photo-1664301373088-1738e22de6ce?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+            alt="Nutricionista profesional" 
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div class="absolute -bottom-8 -right-4 md:-right-8 bg-white p-6 rounded-lg shadow-lg max-w-xs" data-aos="fade-up" data-aos-delay="600">
+          <p class="font-serif text-primary text-lg mb-2 font-medium">
+            "La nutrición no se trata de dietas restrictivas, sino de cuidados y hábitos sostenibles."
+          </p>
+          <p class="text-right font-medium">
+            - Nutricionista Ana López
+          </p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Indicador de scroll -->
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce hidden md:block">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+      </svg>
+    </div>
+  </div>
+</section>

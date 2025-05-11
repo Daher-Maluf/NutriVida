@@ -1,0 +1,116 @@
+---
+// Sección de Servicios para la página web de nutricionista
+
+const services = [
+  {
+    title: 'Consulta Personalizada',
+    description: 'Evaluación completa y plan nutricional adaptado a tus necesidades específicas, objetivos y estilo de vida.',
+    icon: 'clipboard',
+    color: 'primary',
+    features: [
+      'Evaluación nutricional completa',
+      'Análisis de composición corporal',
+      'Plan alimentario personalizado',
+      'Seguimiento mensual'
+    ],
+    popular: true,
+  },
+  {
+    title: 'Consulta Online',
+    description: 'Asesoramiento nutricional a distancia con la misma calidad y atención personalizada que en consulta presencial.',
+    icon: 'video',
+    color: 'secondary',
+    features: [
+      'Videoconferencia de 45-60 minutos',
+      'Plan alimentario personalizado',
+      'Materiales descargables',
+      'Seguimiento por email'
+    ],
+    popular: false,
+  },
+  {
+    title: 'Nutrición Deportiva',
+    description: 'Optimiza tu rendimiento deportivo con planes nutricionales específicos para tus entrenamientos y competiciones.',
+    icon: 'dumbbell',
+    color: 'tertiary',
+    features: [
+      'Evaluación de necesidades energéticas',
+      'Planificación pre/durante/post entrenamiento',
+      'Suplementación deportiva (si es necesaria)',
+      'Seguimiento de rendimiento'
+    ],
+    popular: false,
+  },
+  {
+    title: 'Talleres y Charlas',
+    description: 'Formación grupal sobre nutrición, hábitos saludables y preparación de alimentos para empresas y grupos.',
+    icon: 'users',
+    color: 'accent',
+    features: [
+      'Talleres prácticos de cocina saludable',
+      'Charlas educativas',
+      'Material formativo',
+      'Actividades grupales'
+    ],
+    popular: false,
+  }
+];
+
+// Iconos SVG para servicios
+const icons = {
+  clipboard: '<svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" /></svg>',
+  video: '<svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" /></svg>',
+  dumbbell: '<svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h.5A2.5 2.5 0 0020 5.5v-.565M20 8.5c0 1.5-.75 3-2 4 .75 1 1.25 2.5 1.25 4C19.25 20 17 22 13 22h-2c-1.5 0-3-.5-4-1.5-1 1-2.5 1.5-4 1.5h-2C3 22 .75 20 .75 16.5c0-1.5.5-3 1.25-4-1.25-1-2-2.5-2-4C0 5 2 3 6 3h2c1.5 0 3 .5 4 1.5 1-1 2.5-1.5 4-1.5h2c4 0 6 2 6 5.5z" /></svg>',
+  users: '<svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" /></svg>',
+};
+---
+
+<section id="servicios" class="section w-full">
+  <div class="container mx-auto">
+    <h2 class="section-title" data-aos="fade-up">Mis Servicios</h2>
+    <p class="section-subtitle" data-aos="fade-up" data-aos-delay="200">
+      Soluciones nutricionales adaptadas a tus necesidades y objetivos
+    </p>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4 md:gap-8">
+      {services.map((service, index) => (
+        <div 
+          class={`bg-white rounded-xl shadow-lg overflow-hidden relative ${service.popular ? 'border-2 border-primary' : 'border border-gray-100'}`}
+          data-aos="fade-up" 
+          data-aos-delay={200 + (index * 100)}
+        >
+          {service.popular && (
+            <div class="absolute top-4 right-4 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full">
+              Popular
+            </div>
+          )}
+          
+          <div class={`p-6 bg-${service.color}/10`}>
+            <div class={`inline-flex items-center justify-center w-16 h-16 rounded-full bg-${service.color} text-white mb-6`} set:html={icons[service.icon]} />
+            <h3 class="text-xl font-serif font-bold mb-3">{service.title}</h3>
+            <p class="text-gray-600 mb-4">{service.description}</p>
+          </div>
+          
+          <div class="p-6 bg-white">
+            <ul class="space-y-3">
+              {service.features.map(feature => (
+                <li class="flex items-start">
+                  <svg xmlns="http://www.w3.org/2000/svg" class={`h-5 w-5 mr-2 mt-0.5 text-${service.color}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                  </svg>
+                  <span>{feature}</span>
+                </li>
+              ))}
+            </ul>
+            
+            <div class="mt-8">
+              <a href="#contacto" class={`inline-block w-full text-center py-3 px-6 rounded-md bg-${service.color} text-white font-medium transition-all hover:bg-${service.color}/90`}>
+                Consultar
+              </a>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

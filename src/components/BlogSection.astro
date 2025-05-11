@@ -24,7 +24,7 @@ const recentPosts = (await getCollection('blog'))
           data-aos-delay={index * 100}
         >          <div class="aspect-video overflow-hidden">
             <img 
-              src={post.data.image || "https://source.unsplash.com/C6JhUKs9q8M/1200x700"} 
+              src={post.data.image || "https://images.unsplash.com/photo-1505253758473-96b7015fcd40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&h=700&q=80"} 
               alt={post.data.title} 
               class="w-full h-full object-cover transition-transform hover:scale-105 duration-500"
             />

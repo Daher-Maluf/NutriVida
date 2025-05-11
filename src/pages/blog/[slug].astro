@@ -67,11 +67,10 @@ const formattedPublishDate = new Date(post.data.pubDate).toLocaleDateString('es-
             ))}
           </div>
         </div>
-          <!-- Imagen principal -->
-        {post.data.image && (
+          <!-- Imagen principal -->        {post.data.image && (
           <div class="rounded-xl overflow-hidden mb-10">
             <img 
-              src={post.data.image || "https://source.unsplash.com/C6JhUKs9q8M/1200x700"} 
+              src={post.data.image || "https://images.unsplash.com/photo-1505253758473-96b7015fcd40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&h=700&q=80"} 
               alt={post.data.title} 
               class="w-full h-auto object-cover"
             />
@@ -87,10 +86,9 @@ const formattedPublishDate = new Date(post.data.pubDate).toLocaleDateString('es-
         
         <!-- Sección de cierre -->
         <div class="border-t border-gray-200 pt-8 mt-12">
-          <div class="flex flex-col md:flex-row items-center justify-between gap-6">
-            <div class="flex items-center">
+          <div class="flex flex-col md:flex-row items-center justify-between gap-6">          <div class="flex items-center">
               <div class="h-12 w-12 rounded-full overflow-hidden mr-4">
-                <img src="/img/nutricionista.jpg" alt="Foto de Ana López" class="h-full w-full object-cover" />
+                <img src="https://source.unsplash.com/MzWJr86Vnc8/100x100" alt="Foto de Ana López" class="h-full w-full object-cover" />
               </div>
               <div>
                 <p class="font-medium">{post.data.author}</p>

@@ -2,7 +2,7 @@
 title: "Mitos y verdades sobre las dietas para bajar de peso"
 description: "Un análisis basado en evidencia científica sobre las dietas populares y su efectividad real."
 pubDate: 2023-05-20
-image: "https://source.unsplash.com/LgTyii0GDKQ/1200x700"
+image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&h=700&q=80"
 tags: ["dietas", "pérdida de peso", "mitos"]
 ---
 

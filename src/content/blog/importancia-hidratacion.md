@@ -2,7 +2,7 @@
 title: "La importancia de la hidratación en tu salud diaria"
 description: "Descubre por qué beber suficiente agua es fundamental para tu bienestar y rendimiento."
 pubDate: 2023-06-10
-image: "https://source.unsplash.com/KFOkGXOwBgM/1200x700"
+image: "https://images.unsplash.com/photo-1559839914-17aae19cec71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&h=700&q=80"
 tags: ["hidratación", "salud", "bienestar"]
 ---
 

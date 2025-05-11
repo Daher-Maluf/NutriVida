@@ -2,7 +2,7 @@
 title: "5 Alimentos que aumentan tu energía natural"
 description: "Descubre cuáles son los mejores alimentos para mantener tus niveles de energía durante todo el día."
 pubDate: 2023-04-15
-image: "https://source.unsplash.com/qFxWvT5_RYs/1200x700"
+image: "https://images.unsplash.com/photo-1490818387583-1baba5e638af?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&h=700&q=80"
 tags: ["nutrición", "energía", "alimentación saludable"]
 featured: true
 ---
